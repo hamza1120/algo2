@@ -1,0 +1,38 @@
+Procedure dot_product(v1, v2)
+    Set ps = 0
+    For i = 1 to Length(v1) do
+        Set ps = ps + v1[i] * v2[i]
+    End For
+    Return ps
+End Procedure
+
+Algorithm check_orthogonal_vectors(n)
+    For i = 1 to n do
+        Read v1, v2 from user
+        Set result = dot_product(v1, v2)
+        If result = 0 then
+            Print "Vectors are orthogonal."
+        Else
+            Print "Vectors are not orthogonal."
+        End If
+    End For
+End Algorithm
+Function dot_product(v1, v2)
+    Set ps = 0
+    For i = 1 to Length(v1) do
+        Set ps = ps + v1[i] * v2[i]
+    End For
+    Return ps
+End Function
+
+Algorithm check_orthogonal_vectors(n)
+    For i = 1 to n do
+        Read v1, v2 from user
+        Set result = dot_product(v1, v2)
+        If result = 0 then
+            Print "Vectors are orthogonal."
+        Else
+            Print "Vectors are not orthogonal."
+        End If
+    End For
+End Algorithm
